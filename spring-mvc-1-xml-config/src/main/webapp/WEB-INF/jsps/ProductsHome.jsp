@@ -7,7 +7,8 @@
 <title>Products Home</title>
 </head>
 <body>
-
-	<c:out value="${productsMessage}"></c:out>	
+<div>
+	<h3><c:out value="${productsMessage}"></c:out></h3>
+</div>
 </body>
 </html>
