@@ -16,10 +16,7 @@ public class ProductsController {
 
 	@GetMapping("/products/home")
 	public ModelAndView showProductsHome() {
-		
-		ModelAndView modelAndView = new ModelAndView("ProductsHome");
-		
-		modelAndView.addObject("productsMessage", "Products lists to be displayed here...!");
-		return modelAndView; 
+	
+		return new ModelAndView("ProductsHome", "productsMessage", "Products lists to be displayed here...!"); 
 	}
 }
